@@ -1,0 +1,20 @@
+code/boot_mlp.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\data\CMAPSSData
+
+code/highlights5.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri
+
+code/makefigs6.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\IEEE_Trans.representation
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\data\CMAPSSData
+
+code/severson_batch.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\IEEE_Trans.representation
+
+code/severson_sensitivity.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\IEEE_Trans.representation
+
+code/shared/makefigs6.py
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\IEEE_Trans.representation
+    D:\bách khoa Đà Nẵng\nghiencuukhoahoc\baotri\data\CMAPSSData
+
