@@ -1,7 +1,7 @@
 # Risk--waste geometry for condition-based replacement
 
-Code for *Risk--Waste Geometry for Condition-Based Replacement: Optimality and
-Finite-Fleet Estimation*, by Huy Hoang Le and Kim-Anh Nguyen.
+Code for *Risk--waste geometry for condition-based replacement: Optimality and
+finite-fleet estimation*, by Huy Hoang Le and Kim-Anh Nguyen.
 
 Every figure, table and reported number in the paper is produced by a script here.
 
