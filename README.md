@@ -24,3 +24,8 @@ the PRONOSTIA and XJTU-SY bearing sets. Scripts reach the data by absolute path;
 constants listed in `paths.txt`, or place the data at the same locations.
 
 Python 3.11 with numpy, scipy, matplotlib and scikit-learn.
+
+## License
+
+MIT, see `LICENSE`. It covers the code in this repository. The benchmark datasets are not
+redistributed here and carry their own terms from the sources named above.
