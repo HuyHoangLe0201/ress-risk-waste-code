@@ -23,7 +23,18 @@ repository), the battery cells of Severson et al., *Nature Energy* 4:383--391, 2
 the PRONOSTIA and XJTU-SY bearing sets. Scripts reach the data by absolute path; edit the
 constants listed in `paths.txt`, or place the data at the same locations.
 
-Python 3.11 with numpy, scipy, matplotlib and scikit-learn.
+The battery scripts do not read the Severson release directly. `extract_severson.py`
+reads the three `.mat` batch files -- set `SEVERSON_DIR` to the directory holding them --
+and writes `severson_cells.npz` beside itself. It applies the screening the paper states
+in Section 7.1: drop the first and last cycle as known artefacts, then keep a cell only
+if it has at least 100 cycles with finite summaries, a discharge capacity inside the
+nominal 1.1 Ah range throughout, and an end capacity below 95% of the median of its first
+twenty. That leaves 135 cells. Point the `TSP` constant of `makefigs6.py` at the
+directory holding the `.npz`; `severson_batch.py`, `severson_sensitivity.py` and
+`stratification.py` resolve it through the same constant.
+
+Python 3.11 with numpy, scipy, matplotlib and scikit-learn; `extract_severson.py` also
+needs h5py.
 
 ## License
 
