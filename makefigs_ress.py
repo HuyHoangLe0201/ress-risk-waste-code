@@ -310,7 +310,7 @@ def fig7():
     b.minorticks_off()
     b.set_xticks([0.03, 0.1, 0.3, 1, 3, 10, 30])
     b.set_xticklabels(["0.03", "0.1", "0.3", "1", "3", "10", "30"])
-    b.set_xlabel(r"cost ratio $\chi$")
+    b.set_xlabel(r"cost ratio $\kappa$")
     b.set_ylabel(r"failure probability $P_f$")
     b.set_xlim(0.02, 70)
     b.set_ylim(-0.04, 1.12)

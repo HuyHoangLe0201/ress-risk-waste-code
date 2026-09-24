@@ -259,7 +259,7 @@ def fig2():
 
     # A title reserves its own space; the tag placed by hand at (0.03, 1.05) hung back
     # into the axes and the spine of the panel above ran through "(a)" and "(c)".
-    for ax_, tag in ((a, "(a)  against optimal age replacement"),
+    for ax_, tag in ((a, "(a)  against the fitted-law age baseline"),
                      (b, "(b)  against the fleet-optimal age"),
                      (c, "(c)  half-width against fleet size")):
         ax_.set_title(tag, loc="left", color=INK, fontsize=8.8, pad=3.0)
