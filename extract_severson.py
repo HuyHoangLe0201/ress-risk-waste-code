@@ -3,7 +3,11 @@ fast-charging dataset (Nature Energy 2019) -- the knee-type battery data.
 Reads only the 'summary' group (tiny) so the 3 GB HDF5 files stay on disk.
 """
 import h5py, numpy as np, os
-SD = os.environ.get("SEVERSON_DIR", r"D:\claudecode\generationbound\data\severson")
+# The README documents SEVERSON_DIR as the way to point this at the release;
+# the fallback is a sibling directory, so the script names no machine of its own.
+SD = os.environ.get("SEVERSON_DIR",
+                    os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                 "severson"))
 FILES = ["2017-05-12_batchdata_updated_struct_errorcorrect.mat",
          "2017-06-30_batchdata_updated_struct_errorcorrect.mat",
          "2018-04-12_batchdata_updated_struct_errorcorrect.mat"]
