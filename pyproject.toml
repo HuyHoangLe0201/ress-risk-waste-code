@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riskwaste"
+version = "0.1.0"
+description = "Risk-waste geometry for condition-based replacement: optimal thresholds on predicted remaining life, and finite-fleet interval estimates"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Huy Hoang Le" }, { name = "Kim-Anh Nguyen" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scipy>=1.7"]
+keywords = ["condition-based maintenance", "replacement policy", "prognostics",
+            "remaining useful life", "bootstrap"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/HuyHoangLe0201/ress-risk-waste-code"
+
+[tool.setuptools]
+packages = ["riskwaste"]
