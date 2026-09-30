@@ -5,10 +5,8 @@ Data Repository, unpack it, and run
 
     python examples/cmapss.py path/to/CMAPSSData FD002
 
-This uses the package's own conventions: channels standardised on the training units only,
-and the threshold searched over the exact candidate set. The paper's tables were produced
-by the scripts in paper/, which standardise on the pooled fleet and search a grid; the
-package reproduces those scripts exactly on their own inputs (paper/check_package.py).
+Channels are standardised on the training units only, and the threshold is searched over
+the exact candidate set.
 """
 import sys
 

@@ -90,15 +90,6 @@ plugs in the same way.
 - Intervals from `paired_bootstrap` describe a procedure run on about `0.63 n` distinct
   units, so they are conservative: read them as a floor on what the fleet can resolve.
 
-## Does it reproduce the paper?
-
-`paper/check_package.py` runs the package on the paper's own pipeline and grids. It
-matches the scripts that produced the reported numbers to within 1e-15 on FD002, FD004 and
-the battery fleet: `ell_u`, the frontier, `kappa*`, and the 16.4%, 15.7% and 30.3% of
-monitored cycles visible to a threshold rule. With the package's own conventions,
-`examples/cmapss.py` gives `0.701 [0.595, 0.953]` on FD002 against the paper's
-`0.701 [0.601, 0.960]`.
-
 ## Tests
 
 ```bash
@@ -115,11 +106,6 @@ split over distinct units.
 Nothing is redistributed. C-MAPSS is data set 6 of the
 [NASA Prognostics Data Repository](https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/);
 the battery cells are those of Severson et al., *Nature Energy* 4:383–391, 2019.
-
-## Reproducing the paper
-
-`paper/` holds the scripts that produced every figure, table and reported number, kept
-unchanged as the record of what was run. See `paper/README.md`.
 
 ## License
 
