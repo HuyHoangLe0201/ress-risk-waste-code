@@ -88,7 +88,10 @@ plugs in the same way.
   failure probability is constant and the wasted life only grows, so the optimum at any
   cost ratio is one of at most `n + 1` candidates. Pass `thresholds=` to search a grid.
 - Intervals from `paired_bootstrap` describe a procedure run on about `0.63 n` distinct
-  units, so they are conservative: read them as a floor on what the fleet can resolve.
+  units, so they reflect that smaller fleet. Whether they are conservative for the procedure
+  at `n` depends on the learning curve the paper does not assume; the measured `0.63 n` vs
+  `0.85 n` comparison runs the other way on both turbofan fleets (Supplementary Section S9.2).
+  They are a resolution limit, not a proof of coverage for the full selection procedure.
 
 ## Tests
 

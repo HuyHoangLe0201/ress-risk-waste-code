@@ -10,9 +10,12 @@ learns from them, so each replicate redoes everything a practitioner would:
 3. score both policies on the same validation half, which makes the statistic a paired
    ratio.
 
-A replicate holds about ``0.63 n`` distinct units, so the interval describes a procedure
-run on a smaller fleet than the one in hand. It is conservative for that reason, and
-should be read as a floor on what the fleet can resolve.
+A replicate holds about ``0.63 n`` distinct units, so the predictor is trained on less
+information than in the original fleet and the interval describes a procedure run on a
+smaller fleet. Its width therefore reflects that smaller fleet. Whether it is conservative
+for the procedure at ``n`` depends on the learning curve, which we do not assume: the
+measured comparison of a ``0.63 n`` and a ``0.85 n`` sub-fleet runs the *other* way on both
+turbofan fleets (Supplementary Section S9.2).
 
 ``choose_threshold`` is Algorithm 2: adopt the zero-failure threshold only when the cost
 ratio clears an upper bootstrap quantile of ``kappa*``, not the point estimate, which a
