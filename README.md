@@ -41,7 +41,8 @@ rw.choose_threshold(predicted_paths, kappa=9.0)   # Algorithm 2: a conservative 
 
 # Algorithm 1: condition-based against age replacement, with an interval.
 result = rw.paired_bootstrap(lifetimes, fit_predict, kappa=9.0, n_boot=200)
-print(result)   # g_CBM / g_age = 0.701 [0.601, 0.960] ... on C-MAPSS FD002
+print(result)   # g_CBM / g_age, with its interval; on C-MAPSS FD002 a single seed
+# prints about 0.701 [0.595, 0.953], and 40 splits give the paper's [0.601, 0.960]
 ```
 
 `examples/quickstart.py` runs the whole method on a synthetic fleet in about a minute, with
